@@ -1,0 +1,41 @@
+/* Language */
+
+.lang__en,
+.lang__vn{
+    position: absolute;
+    top: 60%;
+    left: 40px;
+    margin: 0;
+    width: 36px;
+    height: 28px;
+}
+
+.lang__en--img,
+.lang__vn--img{
+    width: 36px !important;
+    height: 28px !important;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+}
+
+.lang__en--img:hover,
+.lang__vn--img:hover{
+    opacity: 1;
+}
+
+@media screen and (max-width: 740px){
+    .lang__en,
+    .lang__vn{
+        display: none;
+    }
+}
+
+.wrper{
+    text-align: center;
+    padding-bottom: 10px;
+    
+}
+.wrper:hover{
+    color: #b66f2d;
+}
+

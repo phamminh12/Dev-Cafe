@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dev Cafe - Menu</title>
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main-plus.css">
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Marck+Script&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" href="./img/favicon.png" />
+</head>
+
+<body>
+  <header>
+    <div class="second-header">
+      <div class="menu-btn">
+        <span class="menu-btn__burger"></span>
+      </div>
+
+      <nav class="nav">
+        <ul class="menu-nav">
+          <li class="menu-nav__item">
+            <a href="index.html" class="logo menu-nav__link">
+              <img src="./img/favicon.png" />
+              <span class="logo-first">Dev</span>
+              <span class="logo-last">Cafe</span>
+            </a>
+            <a href="menu-US.html" class="lang__en">
+              <img src="./img/eng.jpg" alt="" class="lang__en--img">
+            </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="sign-in.html" class="sign-in menu-nav__link">
+              <i class="fa fa-user" aria-hidden="true"></i>
+              Đăng Nhập
+            </a>
+            <span class="menu-nav__link" id="slash">/</span>
+            <a href="sign-up.html" class="sign-up menu-nav__link">
+              Đăng Kí
+            </a>
+          </li>
+          <br />
+          <li class="menu-nav__item">
+            <a href="index.html" class="menu-nav__link">
+              Trang chủ
+            </a>
+          </li>
+          <li class="menu-nav__item active">
+            <a href="menu.html" class="menu-nav__link">
+             Sản Phẩm
+            </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="services.html" class="menu-nav__link">
+              Dịch Vụ
+            </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="contact.html" class="menu-nav__link">
+              Liên Hệ
+            </a>
+          </li>
+          <li class="menu-nav__item">
+            <a href="#!" class="menu-nav__link cart__openBtn">
+              <i class="fa fa-cart-plus" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Shopping Cart -->
+    <div class="cart-overlay">
+      <div class="cart">
+        <div class="cart__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <h2>
+          <i class="fa fa-cart-arrow-down"></i>
+          <span class="span-primary">Giỏ </span> Hàng
+          <i class="fa fa-cart-arrow-down"></i>
+        </h2>
+
+        <!-- JS will add items here -->
+        <div class="item1-display"></div>
+        <div class="item2-display"></div>
+        <div class="item3-display"></div>
+        <div class="item4-display"></div>
+        <div class="item5-display"></div>
+        <div class="item6-display"></div>
+        <div class="item7-display"></div>
+        <div class="item8-display"></div>
+        <div class="item9-display"></div>
+        <div class="item10-display"></div>
+        <div class="item11-display"></div>
+        <div class="item12-display"></div>
+        <div class="total"></div>
+      </div>
+    </div>
+    <!-- View 1: Caffè Americano -->
+    <div class="one__view-overlay">
+      <div class="one__view">
+        <div class="one__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="one__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Caffè</span> Americano
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+            Những ly Espresso được phủ bằng nước nóng sẽ tạo ra một lớp
+            crema nhẹ phủ lên trên chiếc cốc đậm đà tuyệt vời này với chiều sâu và sắc thái.
+            <br />
+            Mẹo chuyên nghiệp: Để tăng thêm hiệu quả,
+            hãy yêu cầu nhân viên pha chế của bạn thử điều này với một lần uống thêm.
+          </div>
+          <img src="./img/caffe-americano.jpg" alt="Caffè Americano" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông Tin</span> dinh dưỡng </h2>
+            <div class="bar-large">Khẩu phần Kích cỡ size L</div>
+            <div class="bar-medium">
+              <b>Calo</b> 15
+              <span class="span-right">Calo từ chất béo 0</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% giá trị dinh dưỡng *</div>
+            </div>
+            <div class="bar-small"><b>Tổng số chất béo </b> 0 g</div>
+            <div class="bar-small">
+              <div class="indent">Chất béo bão hòa 0 g</div>
+            </div>
+            <div class="bar-small">
+              <div class="indent">Trans Fat 0 g</div>
+            </div>
+
+
+            <div class="bar-small">
+              <b>Tổng số carbohydrate </b> 2 g
+              <span class="span-right">1%</span>
+            </div>
+            <div class="bar-small">
+              <div class="indent">Chế độ ăn kiêng 0 g</div>
+            </div>
+            <div class="bar-small">
+              <div class="indent">Đường 0 g</div>
+            </div>
+
+            * 2.000 calo mỗi ngày được sử dụng cho tư
+            vấn dinh dưỡng chung, nhưng lượng calo cần khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>Thành Phần </h2>
+            Nước, espresso được ủ
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 2: Caffè Misto -->
+    <div class="two__view-overlay">
+      <div class="two__view">
+        <div class="two__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="two__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Caffè</span> hỗn hợp
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+            Một sự kết hợp một-một của cà phê tươi
+            và sữa hấp thêm vào một thức uống cà phê ngon đặc biệt đáng kể.
+          </div>
+          <img src="./img/caffe-misto.jpg" alt="Caffè Misto" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">THông Tin</span> dinh dưỡng </h2>
+            <div class="bar-large">Khẩu phần Kích cỡ size L</div>
+            <div class="bar-medium">
+              <b>Calo</b> 110
+              <span class="span-right">Calo từ chất béo 35</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% giá trị dinh dưỡng *</div>
+            </div>
+
+            <div class="bar-small">
+              <div class="indent">
+                tổng số chất béo 2 g <span class="span-right">10%</span>
+              </div>
+            </div>
+
+            <div class="bar-small">
+              <b>tổng Carbohydrates</b> 10 g
+              <span class="span-right">4%</span>
+            </div>
+            <div class="bar-small">
+              <div class="indent">chế độ ăn kiêng 0 g</div>
+            </div>
+            <div class="bar-small">
+              <div class="indent">đường 10 g</div>
+            </div>
+
+
+            * 2.000 calo mỗi ngày được sử dụng cho tư
+            vấn dinh dưỡng chung, nhưng lượng calo cần khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>Thành phần </h2>
+            Cà phê ủ, sữa
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 3: Blonde Caffè Americano -->
+    <div class="three__view-overlay">
+      <div class="three__view">
+        <div class="three__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="three__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Blonde Caffè</span> Americano
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+            Thông tin dinh dưỡng được tính toán dựa trên công thức nấu ăn tiêu chuẩn của chúng tôi. Chỉ thay đổi kích
+            thước đồ uống sẽ cập nhật thông tin này. Các tùy chỉnh khác sẽ không.
+          </div>
+          <img src="./img/caffe-americano.jpg" alt="Blonde Caffè Americano" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông tin </span> dinh dưỡng</h2>
+            <div class="bar-large">Khẩu phần Kích cỡ size M</div>
+            <div class="bar-medium">
+              <b>Calo</b> 15
+              <span class="span-right">Calo từ chất béo 0</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">10% giá trị dinh dưỡng *</div>
+            </div>
+            <div class="bar-small"><b>Tổng lượng béo </b> 0 g</div>
+            <div class="bar-small">
+              <div class="indent">trất bão hòa 0 g</div>
+            </div>
+            <div class="bar-small">
+              <div class="indent">chất béo chuyển hóa 0 g</div>
+            </div>
+
+
+            <div class="bar-small">
+              <b>Tổng Carbohydrates</b> 2 g
+              <span class="span-right">1%</span>
+            </div>
+            * 2.000 calo mỗi ngày được sử dụng
+            cho lời khuyên dinh dưỡng chung, nhưng nhu cầu calo khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>Thành phần </h2>
+            nước,Pha Espresso.
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 4: Blonde Roast -->
+    <div class="four__view-overlay">
+      <div class="four__view">
+        <div class="four__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="four__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary"> Cafe Blonde</span> Roast
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+            Cà phê rang nhẹ, mềm, êm dịu và có hương vị.
+            Dễ uống và thơm ngon với sữa,
+            đường hoặc hương vị vani, caramel hoặc hạt phỉ.
+          </div>
+          <img src="./img/dark-roast-coffee.jpg" alt="Blonde Roast" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông tin </span> dinh dưỡng </h2>
+            <div class="bar-large">khẩu phần kích cỡ size M</div>
+            <div class="bar-medium">
+              <b>Calo</b> 5
+              <span class="span-right">Calo trong chất béo 0</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% giá trị dinh duõng *</div>
+            </div>
+            <div class="bar-small"><b>Tổng chất béo </b> 0 g</div>
+
+
+
+
+            <div class="bar-small"><b>TỔng Carbohydrates</b> 0 g</div>
+            <div class="bar-small">
+              <div class="indent">chất xơ 0 g</div>
+            </div>
+            <div class="bar-small">
+              <div class="indent">đường 0 g</div>
+            </div>
+            <div class="bar-small">
+              <b>đạm</b> 1 g <span class="span-right">2%</span>
+            </div>
+            <div class="bar-small"><b>Caffeine</b> 360 mg</div>
+            * 2.000 calo mỗi ngày được sử dụng cho
+            lời khuyên dinh dưỡng chung, nhưng nhu cầu calo khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>Thành phần</h2>
+            caffe pha
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 5: Dark Roast Coffee -->
+    <div class="five__view-overlay">
+      <div class="five__view">
+        <div class="five__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="five__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Dark Roast</span> Coffee
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+            Loại cà phê rang đậm có hương vị đậm đà,
+            đậm đà này thể hiện nghệ thuật rang và pha trộn
+            của chúng tôi—một sự pha trộn thiết yếu giữa hương vị cân bằng và kéo dài.
+          </div>
+          <img src="./img/dark-roast-coffee.jpg" alt="Dark Roast Coffee" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông tin</span> dinh dưỡng </h2>
+            <div class="bar-large">Khẩu phần kích cỡ size L</div>
+            <div class="bar-medium">
+              <b>Calo</b> 5
+              <span class="span-right">Calo trong chất béo 0</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% giá trị dinh dưỡng *</div>
+            </div>
+            <div class="bar-small"><b>Tổng chất béo </b> 0 g</div>
+            <div class="bar-small">
+              <div class="indent">Chất béo bão hòa 0 g</div>
+            </div>
+            <div class="bar-small">
+              <div class="indent">chất béo chuyển hóa 0 g</div>
+            </div>
+
+
+            <div class="bar-small"><b>TỔng Carbohydrates</b> 0 g</div>
+            <div class="bar-small">
+              <div class="indent">chất xơ 0 g</div>
+            </div>
+            <div class="bar-small">
+              <div class="indent">Đường 0 g</div>
+            </div>
+            <div class="bar-small">
+              <b>đạm</b> 1 g <span class="span-right">2%</span>
+            </div>
+            <div class="bar-small"><b>Caffeine</b> 260 mg</div>
+            * 2.000 calo mỗi ngày được sử dụng cho lời khuyê
+            n dinh dưỡng chung, nhưng nhu cầu calo khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>Thành Phần</h2>
+            cafe pha
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 6: Pike Place® Roast -->
+    <div class="six__view-overlay">
+      <div class="six__view">
+        <div class="six__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="six__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Cafe </span> đen
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+
+          </div>
+          <img src="./img/dark-roast-coffee.jpg" alt="Pike Place® Roast" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông tin</span> dinh dưỡng </h2>
+            <div class="bar-large">Khẩu phần kích cỡ size M</div>
+            <div class="bar-medium">
+              <b>Calo</b> 5
+              <span class="span-right">Calo chất béo 0</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% thành phần dĩnh dưỡng *</div>
+            </div>
+            <div class="bar-small"><b>Tổng chất béo</b> 0 g</div>
+
+
+            <div class="bar-small">
+              <div class="indent">Đường 0 g</div>
+            </div>
+            <div class="bar-small">
+              <b>Đạm</b> 1 g <span class="span-right">2%</span>
+            </div>
+            <div class="bar-small"><b>Caffeine</b> 310 mg</div>
+            * 2.000 calo mỗi ngày được sử dụng cho lời khuyên
+            dinh dưỡng chung, nhưng nhu cầu calo khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>Thành Phần</h2>
+            cafe pha
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 7: Decaf Pike Place® Roast -->
+    <div class="seven__view-overlay">
+      <div class="seven__view">
+        <div class="seven__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="seven__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Decaf Pike</span> Place® Roast
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+            Từ cửa hàng đầu tiên của chúng tôi tại Chợ Pike Place ở Seattle cho đến các quán cà phê của chúng tôi trên
+            khắp thế giới, khách hàng đã yêu cầu loại cà phê mới pha mà họ có thể thưởng thức suốt cả ngày. Vào năm
+            2008, những nhà pha chế và rang xay bậc thầy của chúng tôi đã tạo ra loại cà phê này cho bạn—một hỗn hợp
+            sánh mịn, đậm đà của cà phê Mỹ Latinh với hương vị đậm đà tinh tế của sô cô la và hạt nướng, loại cà phê này
+            được phục vụ tươi mỗi ngày tại một cửa hàng Starbucks® gần bạn.
+          </div>
+          <img src="./img/caffe-americano.jpg" alt="Caffè Americano" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông tin </span> dinh dưỡng </h2>
+            <div class="bar-large">size XL</div>
+            <div class="bar-medium">
+              <b>Calo</b> 5
+              <span class="span-right">Calo trong chất béo 0</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% Giá trị dinh dưỡng *</div>
+            </div>
+            <div class="bar-small"><b>tổng chất béo</b> 0 g</div>
+            <div class="bar-small">
+              <div class="indent">hổn hợp béo 0 g</div>
+            </div>
+
+            <div class="bar-small">
+              <div class="indent">Đường 0 g</div>
+            </div>
+            <div class="bar-small">
+              <b>đạm</b> 1 g <span class="span-right">2%</span>
+            </div>
+            <div class="bar-small"><b>Caffeine</b> 25 mg</div>
+            * 2.000 calo mỗi ngày được sử dụng cho lời khuyên
+            dinh dưỡng chung, nhưng nhu cầu calo khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>Thành phần </h2>
+            cofe hòa tan
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 8: Cappuccino -->
+    <div class="eight__view-overlay">
+      <div class="eight__view">
+        <div class="eight__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="eight__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Cappu</span>ccino
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+            Cà phê espresso đậm đà, đậm đà nằm chờ đợi dưới lớp bọt sữa dày và mịn.
+            Một thuật giả kim của nghệ thuật barista và nghề thủ công.
+          </div>
+          <img src="./img/cappuccino.jpg" alt="Cappuccino" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông tin</span> dinh dưỡng</h2>
+            <div class="bar-large">size L</div>
+            <div class="bar-medium">
+              <b>Calo</b> 120
+              <span class="span-right">Calo béo 35</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% giá trị dinh dưỡng *</div>
+            </div>
+            <div class="bar-small">
+              <b>Tổng chất béo </b> 4 g <span class="span-right">5%</span>
+            </div>
+            <div class="bar-small">
+              <div class="indent">
+                hỗn hợp béo 2 g <span class="span-right">10%</span>
+              </div>
+            </div>
+
+
+            <div class="bar-small">
+              <b>Tổng Carbohydrates</b> 12 g
+              <span class="span-right">4%</span>
+            </div>
+
+            <div class="bar-small">
+              <div class="indent">Đường 10 g</div>
+            </div>
+            <div class="bar-small">
+              <b>Đạm</b> 8 g <span class="span-right">16%</span>
+            </div>
+            <div class="bar-small"><b>Caffeine</b> 150 mg</div>
+            * 2.000 calo mỗi ngày được sử dụng cho lời khuyên
+            dinh dưỡng chung, nhưng nhu cầu calo khác nhau.
+          </div>
+
+          <div class="ingredients">
+            <h2>thành phần </h2>
+            Sữa, Brewed Espresso
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- View 9: Blonde Cappuccino -->
+    <div class="nine__view-overlay">
+      <div class="nine__view">
+        <div class="nine__view__closeBtn">
+          <i class="fas fa-window-close"></i>
+        </div>
+        <div class="nine__view-content">
+          <h2>
+            <i class="fas fa-mug-hot"></i>
+            <span class="span-primary">Blonde</span> Cappuccino
+            <i class="fas fa-mug-hot"></i>
+          </h2>
+          <div class="description">
+
+            Cà phê Espresso màu vàng cực kỳ mịn màng và ngọt ngào
+            tinh tế của chúng tôi nằm chờ đợi dưới lớp bọt dày được làm mịn và căng.
+            Loại cà phê cappuccino này mang đến kết cấu sang trọng và lớp bọt xốp mịn
+            như nhung với dòng nước mát lạnh bên dưới.
+          </div>
+          <img src="./img/cappuccino.jpg" alt="Blonde Cappuccino" />
+          <div class="nutritional_info">
+            <h2><span class="span-primary">Thông tin </span> dinh dưỡng</h2>
+            <div class="bar-large">Size L</div>
+            <div class="bar-medium">
+              <b>Calo</b> 120
+              <span class="span-right">Calo có trong chất béo 35</span>
+            </div>
+            <div class="bar-small">
+              <div class="span-align-right">% giá trị dinh dưỡng *</div>
+            </div>
+            <div class="bar-small">
+              <b>Tổng chất béo</b> 4 g <span class="span-right">5%</span>
+            </div>
+            <div class="bar-small">
+              <div class="indent">
+                hỗn hợp béo 2 g <span class="span-right">10%</span>
+              </div>
+            </div>
+
+            <div class="bar-small">
+              <b>Cholesterol</b> 15 mg <span class="span-right">5%</span>
+            </div>
+            <div class="bar-small">
+              <b>natri</b> 100 mg <span class="span-right">4%</span>
+            </div>
+            <div class="bar-small">
+              <b>Tổng Carbohydrates</b> 12 g
+              <span class="span-right">4%</span>
+
+              <div class="bar-small">
+                <div class="indent">Đường 10 g</div>
+              </div>
+              <div class="bar-small">
+                <b>đạm</b> 8 g <span class="span-right">16%</span>
+              </div>
+              <div class="bar-small"><b>Caffeine</b> 170 mg</div>
+              * 2.000 calo mỗi ngày được sử dụng cho lời khuyên dinh dưỡng chung
+              , nhưng nhu cầu calo khác nhau.
+              Thành phần
+            </div>
+
+            <div class="ingredients">
+              <h2>Thành phần </h2>
+              Sữa, pha Espresso
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- View 10: Espresso -->
+      <div class="ten__view-overlay">
+        <div class="ten__view">
+          <div class="ten__view__closeBtn">
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="ten__view-content">
+            <h2>
+              <i class="fas fa-mug-hot"></i>
+              <span class="span-primary">Espr</span>esso
+              <i class="fas fa-mug-hot"></i>
+            </h2>
+            <div class="description">
+              Espresso Roast mịn màng đặc trưng của chúng tôi với hương vị phong phú và vị ngọt ngào của caramel là
+              trọng tâm của mọi việc chúng tôi làm.
+            </div>
+            <img src="./img/espresso.jpg" alt="Espresso" />
+            <div class="nutritional_info">
+              <h2><span class="span-primary">Thông tin</span> dinh dưỡng</h2>
+              <div class="bar-large">size M</div>
+              <div class="bar-medium">
+                <b>Calo</b> 10
+                <span class="span-right">Calo có trong chất béo 0</span>
+              </div>
+              <div class="bar-small">
+                <div class="span-align-right">% giá trị dinh dưỡng *</div>
+              </div>
+              <div class="bar-small"><b>Tổng chất béo</b> 0 g</div>
+              <div class="bar-small">
+                <div class="indent">hỗn hợp béo 0 g</div>
+              </div>
+              
+              <div class="bar-small"><b>Cholesterol</b> 0 mg</div>
+              
+              <div class="bar-small">
+                <b>Tổng Carbohydrates</b> 2 g
+                <span class="span-right">1%</span>
+              </div>
+              
+              <div class="bar-small">
+                <div class="indent">Đường 0 g</div>
+              </div>
+              <div class="bar-small">
+                <b>Chất đạm</b> 1 g <span class="span-right">2%</span>
+              </div>
+              <div class="bar-small"><b>Caffeine</b> 150 mg</div>
+              * 2.000 calo mỗi ngày được sử dụng cho lời khuyên dinh dưỡng chung, 
+              nhưng nhu cầu calo khác nhau.
+            </div>
+
+            <div class="ingredients">
+              <h2>Thành phần </h2>
+              sữa, pha Espresso
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+
+      <!-- View 11: Espresso Macchiato -->
+      <div class="eleven__view-overlay">
+        <div class="eleven__view">
+          <div class="eleven__view__closeBtn">
+            <i class="fas fa-window-close"></i>
+          </div>
+          <div class="eleven__view-content">
+            <h2>
+              <i class="fas fa-mug-hot"></i>
+              <span class="span-primary">Espresso</span> Macchiato
+              <i class="fas fa-mug-hot"></i>
+            </h2>
+            <div class="description">
+              Cà phê espresso đậm đà của chúng tôi được đánh dấu bằng sữa hấp và bọt.
+               Một phong cách cổ điển Châu Âu.
+            </div>
+            <img src="./img/espresso-macchiato.jpg" alt="Espresso Macchiato" />
+            <div class="nutritional_info">
+              <h2><span class="span-primary">Thông tin</span> dinh dưỡng</h2>
+              <div class="bar-large">size L</div>
+              <div class="bar-medium">
+                <b>Calo</b> 15
+                <span class="span-right">Calo có trong chất béo 0</span>
+              </div>
+              <div class="bar-small">
+                <div class="span-align-right">% Gía trị dinh dưỡng *</div>
+              </div>
+              <div class="bar-small"><b>tổng chất béo</b> 0 g</div>
+              <div class="bar-small">
+                <div class="indent">hỗn hợp béo 0 g</div>
+              </div>
+              
+              <div class="bar-small"><b>Cholesterol</b> 0 mg</div>
+              
+              <div class="bar-small">
+                <b>Tổng Carbohydrates</b> 2 g
+                <span class="span-right">1%</span>
+              </div>
+              
+              <div class="bar-small">
+                <div class="indent">Đường 0 g</div>
+              </div>
+              <div class="bar-small">
+                <b>Chất đạm</b> 1 g <span class="span-right">2%</span>
+              </div>
+             
+              * 2.000 calo mỗi ngày được sử dụng cho lời khuyên dinh dưỡng chung, 
+              nhưng nhu cầu calo khác nhau.
+            </div>
+
+            <div class="ingredients">
+              <h2>Thành phần</h2>
+               Espresso, Sữa
+            </div>
+
+           
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <main>
+    <section class="menu">
+      <div class="pic-area">
+        <div class="pic-area-text">
+          <h2>Ưu đãi trong thời gian có hạn:</h2>
+          <h1>Giảm giá 20% cho bất kỳ đồ uống cỡ lớn nào!</h1>
+
+        </div>
+      </div>
+      <div class="flex">
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/caffe-americano.jpg" alt="Caffè Americano" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn one__view__openBtn">
+                Thông Tin
+              </a>
+              <a href="#!" class="box__btn one__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Caffè Americano</h2>
+          <h3>25.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/caffe-misto.jpg" alt="Caffe Misto" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn two__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn two__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Caffè Misto</h2>
+          <h3>30.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/caffe-americano.jpg" alt="Blonde Caffè Americano" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn three__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn three__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Blonde Caffè Americano</h2>
+          <h3>30.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/dark-roast-coffee.jpg" alt="Blonde Roast" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn four__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn four__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Blonde Roast</h2>
+          <h3>25.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/dark-roast-coffee.jpg" alt="Dark Roast Coffee" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn five__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn five__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Dark Roast Coffee</h2>
+          <h3>27.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/dark-roast-coffee.jpg" alt="Pike Place® Roast" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn six__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn six__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Cafe Đen</h2>
+          <h3>25.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/dark-roast-coffee.jpg" alt="Decaf Pike Place® Roast" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn seven__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn seven__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Decaf Pike Place® Roast</h2>
+          <h3>25.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/cappuccino.jpg" alt="Cappuccino" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn eight__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn eight__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Cappuccino</h2>
+          <h3>27.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/cappuccino.jpg" alt="Blonde Cappuccino" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn nine__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn nine__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Blonde Cappuccino</h2>
+          <h3>30.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/espresso.jpg" alt="Espresso" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn ten__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn ten__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Espresso</h2>
+          <h3>28.000</h3>
+        </div>
+        <div class="box">
+          <div class="img-container">
+            <img src="./img/espresso-macchiato.jpg" alt="Espresso Macchiato" />
+            <div class="box__btns">
+              <a href="#!" class="box__btn eleven__view__openBtn">
+                Thông tin
+              </a>
+              <a href="#!" class="box__btn eleven__cart__button">
+                Thêm sản phẩm
+              </a>
+            </div>
+          </div>
+          <h2>Espresso Macchiato</h2>
+          <h3>25.000</h3>
+        </div>
+      
+      </div>
+      <footer>
+        <div class="icons">
+          <a href="#!">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#!">
+            <i class="fab fa-snapchat-square"></i>
+          </a>
+        </div>
+
+        <div class="wrper">
+          <div class="copyright">
+            <a href="" style="text-decoration: none;color:#fff;">© 2023 Dev Coffee. All rights reserved</a>
+          </div>
+          <div class="gmail">
+            <i class="fa-regular fa-envelope" style="color:#fff;"></i>
+             <a href="" style="text-decoration:none;color:#fff">devcaffe@gmail.com</a> 
+
+          </div>
+        </div>
+
+
+      </footer>
+    </section>
+  </main>
+  <script src="./js/script.js"></script>
+  <script src="./js/menu.js"></script>
+  <script src="https://kit.fontawesome.com/c057664144.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
